@@ -1,0 +1,16 @@
+apiVersion: connectors.aiops.ibm.com/v1beta1
+kind: ConnectorSchema
+metadata:
+  name: mock
+spec:
+  documentation: https://json-schema.org/understanding-json-schema/
+  categories:
+    - events
+  ceType: 'com.ibm.aiopsedge.mock.async'
+  components:
+    - name: connector
+      host: https://connector-controller.aioctest.svc.cluster.local/run
+      apiType: OpenAPI
+  schema:
+    type: object
+    additionalProperties: true
