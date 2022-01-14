@@ -2,6 +2,8 @@ apiVersion: connectors.aiops.ibm.com/v1beta1
 kind: ConnectorSchema
 metadata:
   name: mock
+  labels:
+    connectors.aiops.ibm.com/git-app-name: mock-bundle-prereqs
 spec:
   documentation: https://json-schema.org/understanding-json-schema/
   categories:
