@@ -13,6 +13,7 @@ spec:
     - name: connector
       host: https://connector-controller.aioctest.svc.cluster.local/run
       apiType: OpenAPI
+      ceType: com.something.something
   schema:
     type: object
     additionalProperties: true
